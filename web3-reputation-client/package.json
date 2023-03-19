@@ -1,0 +1,50 @@
+{
+  "name": "web3-reputation",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "start": "serve -s dist",
+    "gen:types": "orval --config ./orval.config.ts",
+    "typechain": "typechain --target web3-v1 --out-dir ./src/model/contract-model './src/utils/*.json'"
+  },
+  "dependencies": {
+    "@heroicons/react": "^2.0.16",
+    "@reduxjs/toolkit": "^1.9.3",
+    "@typechain/web3-v1": "^6.0.2",
+    "@types/react-outside-click-handler": "^1.3.1",
+    "@web3modal/ethereum": "^2.2.1",
+    "@web3modal/react": "^2.2.1",
+    "buffer": "^6.0.3",
+    "ethers": "^5",
+    "events": "^3.3.0",
+    "framer-motion": "^10.6.0",
+    "is-mobile": "^4.0.0",
+    "orval": "^6.12.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-outside-click-handler": "^1.3.0",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.9.0",
+    "serve": "^14.2.0",
+    "typechain": "^8.1.1",
+    "typechain-target-web3-v1": "^1.0.4",
+    "wagmi": "^0.12.2",
+    "web3": "^1.8.2",
+    "web3-eth-contract": "^1.8.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@vitejs/plugin-react": "^3.1.0",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.21",
+    "prettier": "^2.8.4",
+    "tailwindcss": "^3.2.7",
+    "typescript": "^4.9.3",
+    "vite": "^4.2.0"
+  }
+}
